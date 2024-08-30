@@ -3,7 +3,7 @@ package Acme::Free::API::Stonks;
 use strict;
 use warnings;
 
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 
 use HTTP::Tiny;
 use JSON            qw/decode_json/;
@@ -48,7 +48,6 @@ This module provides the client, "stonks", that is available via C<PATH> after i
   use strict;
   use warnings;
   
-  use Util::H2O::More qw/ddd/;
   use Acme::Free::API::Stonks qw//;
   
   my $stonk = Acme::Free::API::Stonks->new;
