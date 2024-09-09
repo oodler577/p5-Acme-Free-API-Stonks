@@ -7,7 +7,7 @@ our $VERSION = '1.0.1';
 
 use HTTP::Tiny;
 use JSON            qw/decode_json/;
-use Util::H2O::More qw/baptise ddd d2o/;
+use Util::H2O::More qw/baptise d2o/;
 
 use constant {
     BASEURL => "https://tradestie.com/api/v1/apps/reddit",
@@ -120,11 +120,14 @@ The example below is printing out the full list (at the time of this writing), s
 
 =head1 DESCRIPTION
 
-This fun module is to demonstrate how to use L<Util::H2O::More> to make
-API SaaS modules and clients in a clean and idiomatic way. These kind of
-APIs tracked at L<https://www.freepublicapis.com/> are really nice for
-fun and practice because they don't require dealing with API keys in the
-vast majority of cases. In some cases, the are actually useful.
+Contributed as part of the B<FreePublicPerlAPIs> Project described at,
+L<https://github.com/oodler577/FreePublicPerlAPIs>.
+
+This fun module is to demonstrate how to use L<Util::H2O::More> and
+L<Dispatch::Fu> to make creating easily make API SaaS modules and
+clients in a clean and idiomatic way. These kind of APIs tracked at
+L<https://www.freepublicapis.com/> are really nice for fun and practice
+because they don't require dealing with API keys in the vast majority of cases.
 
 =head1 METHODS
 
